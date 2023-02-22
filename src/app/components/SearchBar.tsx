@@ -14,7 +14,7 @@ function SearchBar() {
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
             />
-            <button onClick={() => router.push('/search')} className="rounded bg-red-600 px-9 py-2 text-white">
+            <button onClick={() => router.push(`/search?location=${location}`)} className="rounded bg-red-600 px-9 py-2 text-white">
                 Let's go
             </button>
         </div>
